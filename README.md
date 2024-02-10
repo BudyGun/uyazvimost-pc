@@ -83,5 +83,5 @@ nmap -sV -p 80 192.168.107.130 --script http-c*
 *Приведите ответ в свободной форме.*
 
 
-![alt text](https://github.com/BudyGun/Indx/blob/main/images/i1.png)
+
 
