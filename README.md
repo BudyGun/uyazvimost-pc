@@ -48,7 +48,7 @@ nmap -sV 192.168.107.130
 
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec3.png)
 
-Спомощью брутфорс из базы скриптов ssh обнаружена правильная пара для доступа по ssh:  user:user      
+1) Спомощью брутфорс из базы скриптов ssh обнаружена правильная пара для доступа по ssh:  user:user      
 ```
  nmap -sV -p 22 192.168.107.130 --script ssh*     
 ```
@@ -57,12 +57,17 @@ nmap -sV 192.168.107.130
 Зашел на ВМ, посмотрел файлы:   
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec11.png)    
 
-Такая же уязвимость по ftp, обнаружена пара user:user с помощью команды:   
+2) Такая же уязвимость по ftp, обнаружена пара user:user с помощью команды:   
 ```
  nmap -sV -p 21 192.168.107.130 --script ftp*     
 ```
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec12.png)    
 
+3) обнаружены куки на сервере
+   ```
+nmap -sV -p 80 192.168.107.130 --script http-c*
+   ```
+![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec20.png)    
 
 ### Задание 2
 
