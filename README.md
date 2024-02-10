@@ -41,9 +41,24 @@
 ### Решение 1   
 При сканировании утилитой nmap были обнаружены сервисы:   
 ftp, ssh, telnet, smtp, domain, http, rpcbind, netbios-ssn, microsoft-ds, exec, login, shell, rmiregistry, ingreslock, nfs, ccproxy-ftp, mysql, postgresql,vnc, x11, irc, ajp13   
-Более подробно здесь:   
+Более подробно здесь с названиями сервисов:   
 
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec3.png)
+
+Спомощью брутфорс из базы скриптов ssh обнаружена правильная пара для доступа по ssh:  user:user      
+```
+ nmap -sV -p 22 192.168.107.130 --script ssh*     
+```
+![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec10.png)   
+
+Зашел на ВМ, посмотрел файлы:   
+![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec11.png)    
+
+Такая же уязвимость по ftp, обнаружена пара user:user с помощью команды:   
+```
+ nmap -sV -p 22 192.168.107.130 --script ftp*     
+```
+![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec12.png)    
 
 
 ### Задание 2
