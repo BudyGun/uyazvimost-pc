@@ -39,7 +39,9 @@
 *Приведите ответ в свободной форме.*     
 
 ### Решение 1   
-При сканировании утилитой nmap были обнаружены сервисы:
+При сканировании утилитой nmap были обнаружены сервисы:   
+ftp, ssh, telnet, smtp, domain, http, rpcbind, netbios-ssn, microsoft-ds, exec, login, shell, rmiregistry, ingreslock, nfs, ccproxy-ftp, mysql, postgresql,vnc, x11, irc, ajp13 и один неопределенный сервис.
+
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec1.png)
 
 
