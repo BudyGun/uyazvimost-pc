@@ -42,6 +42,9 @@
 При сканировании утилитой nmap были обнаружены сервисы:   
 ftp, ssh, telnet, smtp, domain, http, rpcbind, netbios-ssn, microsoft-ds, exec, login, shell, rmiregistry, ingreslock, nfs, ccproxy-ftp, mysql, postgresql,vnc, x11, irc, ajp13   
 Более подробно здесь с названиями сервисов:   
+```
+nmap -sV 192.168.107.130
+```
 
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec3.png)
 
@@ -56,7 +59,7 @@ ftp, ssh, telnet, smtp, domain, http, rpcbind, netbios-ssn, microsoft-ds, exec, 
 
 Такая же уязвимость по ftp, обнаружена пара user:user с помощью команды:   
 ```
- nmap -sV -p 22 192.168.107.130 --script ftp*     
+ nmap -sV -p 21 192.168.107.130 --script ftp*     
 ```
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec12.png)    
 
