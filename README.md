@@ -64,9 +64,9 @@ nmap -sV 192.168.107.130
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec12.png)    
 
 3) обнаружены куки на сервере
-   ```
+```
 nmap -sV -p 80 192.168.107.130 --script http-c*
-   ```
+```
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec30.png)   
 
 ### Задание 2
