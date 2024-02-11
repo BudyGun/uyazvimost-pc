@@ -102,10 +102,9 @@ sudo nmap -sF 192.168.107.130
 UDP-сканирование:   
 машина nmap отправляется UDP-пакет. Если в ответ было получено ICMP-сообщение "destination unreachable", это означает, что UDP-порт открыт. В противном случае, что порт закрыт.
 ```
-![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec204.png)  
-```
 sudo nmap -sU 192.168.107.130
 ```
+![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec204.png)  
 
 Xmas-сканирование:
 ```
