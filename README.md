@@ -55,6 +55,10 @@ nmap -sV 192.168.107.130
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec10.png)   
 
 Зашел на ВМ, посмотрел файлы:   
+```
+ssh -oHostKeyAlgorithms=+ssh-dss user@192.168.107.130
+```
+
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec11.png)    
 
 2) Такая же уязвимость по ftp, обнаружена пара user:user с помощью команды:   
