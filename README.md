@@ -107,7 +107,7 @@ sudo nmap -sU 192.168.107.130
 ![alt text](https://github.com/BudyGun/uyazvimost-pc/blob/main/images/sec204.png)  
 
 Xmas-сканирование:
-машина nmap отправляет пакеты с флагами FIN, PSH, URG. Ответ не получен - открыт. TCP-пакет с флагом RST - закрыт.
+машина nmap отправляет пакеты с флагами FIN, PSH, URG. Ответ не получен - открыт. TCP-пакет с флагом RST, ACK - закрыт.
 ```
 sudo nmap -sX 192.168.107.130
 ```
